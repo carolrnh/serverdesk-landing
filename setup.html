@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ServerDesk setup guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container narrow" style="padding:48px 0">
+  <h1>Setup guide</h1>
+  <p>ServerDesk is a Discord utility for paid course and cohort communities: welcome, <code>/faq</code>, and <code>/ask</code> → staff. Hosted plan is <strong>$19/mo</strong> per server.</p>
+
+  <h2>Hosted setup (recommended)</h2>
+  <ol>
+    <li>Pay for hosted ServerDesk: <a href="https://buy.stripe.com/4gMfZj4Or4Nw73I1R053O01">$19/mo checkout</a>.</li>
+    <li>After payment you’ll get an invite link and a short provision email.</li>
+    <li>Invite the bot with scopes <code>bot</code> and <code>applications.commands</code>.</li>
+    <li>In your server (as an admin), run:
+      <pre><code>/setup welcome_channel:#welcome staff_channel:#staff-help staff_role:@Staff</code></pre>
+    </li>
+    <li>Try <code>/faq</code> and <code>/ask How do I access Week 1?</code>.</li>
+  </ol>
+
+  <h2>What each command does</h2>
+  <ul>
+    <li><code>/setup</code> — welcome channel, staff channel, staff role, optional welcome text</li>
+    <li><code>/faq</code> — answers from your FAQ knowledge base</li>
+    <li><code>/ask</code> — private staff thread (or staff channel) for real questions</li>
+  </ul>
+
+  <h2>Permissions to allow</h2>
+  <p>View Channels, Send Messages, Embed Links, Create Public/Private Threads, Send Messages in Threads. Manage Threads is optional. Do not require Mention Everyone.</p>
+
+  <h2>Intents</h2>
+  <p>Enable <strong>Server Members Intent</strong> so welcome-on-join works. Message Content Intent is not required (slash commands only).</p>
+
+  <h2>What ServerDesk does not do</h2>
+  <ul>
+    <li>No mass DMs</li>
+    <li>No invite bumps or growth spam</li>
+    <li>No member-list scraping for marketing</li>
+  </ul>
+
+  <p>Privacy: <a href="/privacy">/privacy</a> · Terms: <a href="/terms">/terms</a></p>
+  <p><a href="/">← Back to ServerDesk</a></p>
+</main>
+</body>
+</html>
