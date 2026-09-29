@@ -16,10 +16,10 @@
 
   <h2>Hosted setup (recommended)</h2>
   <ol>
-    <li>Pay for hosted ServerDesk: <a href="https://buy.stripe.com/4gMfZj4Or4Nw73I1R053O01">$19/mo checkout</a>.</li>
-    <li>After payment you’ll get an invite link and a short provision email.</li>
-    <li>Invite the bot with scopes <code>bot</code> and <code>applications.commands</code>.</li>
-    <li>In your server (as an admin), run:
+    <li><strong>Subscribe</strong> — <a href="https://buy.stripe.com/4gMfZj4Or4Nw73I1R053O01">$19/mo checkout</a> via Stripe. Cancel anytime.</li>
+    <li><strong>Check your email</strong> — after payment we email your Discord invite link and a short provision note. You do not create a Discord app yourself.</li>
+    <li><strong>Add ServerDesk</strong> — open the emailed invite and add the bot to your server (as an admin).</li>
+    <li><strong>Configure</strong> — in your server, run:
       <pre><code>/setup welcome_channel:#welcome staff_channel:#staff-help staff_role:@Staff</code></pre>
     </li>
     <li>Try <code>/faq</code> and <code>/ask How do I access Week 1?</code>.</li>
@@ -32,18 +32,11 @@
     <li><code>/ask</code> — private staff thread (or staff channel) for real questions</li>
   </ul>
 
-  <h2>Permissions to allow</h2>
-  <p>View Channels, Send Messages, Embed Links, Create Public/Private Threads, Send Messages in Threads. Manage Threads is optional. Do not require Mention Everyone.</p>
+  <h2>Permissions the invite will request</h2>
+  <p>When you approve the emailed invite, Discord may ask for: View Channels, Send Messages, Embed Links, Create Public/Private Threads, Send Messages in Threads. Manage Threads is optional. Mention Everyone is not required.</p>
 
-  <h2>Intents</h2>
-  <p>Enable <strong>Server Members Intent</strong> so welcome-on-join works. Message Content Intent is not required (slash commands only).</p>
-
-  <h2>What ServerDesk does not do</h2>
-  <ul>
-    <li>No mass DMs</li>
-    <li>No invite bumps or growth spam</li>
-    <li>No member-list scraping for marketing</li>
-  </ul>
+  <h2>Self-host</h2>
+  <p>Prefer to run the open MVP yourself? Create your own Discord application in the <a href="https://discord.com/developers/applications">Developer Portal</a>, add a bot, enable <strong>Server Members Intent</strong> (welcome-on-join), and invite with scopes <code>bot</code> + <code>applications.commands</code>. Message Content Intent is not required (slash commands only). Then configure channels with <code>/setup</code> as above. Hosted buyers can ignore this section.</p>
 
   <p>Privacy: <a href="/privacy">/privacy</a> · Terms: <a href="/terms">/terms</a></p>
   <p><a href="/">← Back to ServerDesk</a></p>
