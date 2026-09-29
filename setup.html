@@ -3,43 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hosted setup guide for ServerDesk — welcome, /faq, and /ask for paid Discord communities. $19/mo.">
   <title>ServerDesk setup guide</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main class="container narrow" style="padding:48px 0">
-  <h1>Setup guide</h1>
-  <p>ServerDesk is a Discord utility for paid course and cohort communities: welcome, <code>/faq</code>, and <code>/ask</code> → staff. Hosted plan is <strong>$19/mo</strong> per server.</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="ServerDesk home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>ServerDesk</span>
+      </a>
+      <a class="nav-link" href="/#how-it-works">How it works</a>
+    </div>
+  </header>
 
-  <h2>Hosted setup (recommended)</h2>
-  <ol>
-    <li><strong>Subscribe</strong> — <a href="https://buy.stripe.com/4gMfZj4Or4Nw73I1R053O01">$19/mo checkout</a> via Stripe. Cancel anytime.</li>
-    <li><strong>Check your email</strong> — after payment we email your Discord invite link and a short provision note. You do not create a Discord app yourself.</li>
-    <li><strong>Add ServerDesk</strong> — open the emailed invite and add the bot to your server (as an admin).</li>
-    <li><strong>Configure</strong> — in your server, run:
-      <pre><code>/setup welcome_channel:#welcome staff_channel:#staff-help staff_role:@Staff</code></pre>
-    </li>
-    <li>Try <code>/faq</code> and <code>/ask How do I access Week 1?</code>.</li>
-  </ol>
+  <main class="container narrow page-content">
+    <h1>Setup guide</h1>
+    <p>ServerDesk is a Discord utility for paid course and cohort communities: welcome, <code>/faq</code>, and <code>/ask</code> → staff. Hosted plan is <strong>$19/mo</strong> per server.</p>
 
-  <h2>What each command does</h2>
-  <ul>
-    <li><code>/setup</code> — welcome channel, staff channel, staff role, optional welcome text</li>
-    <li><code>/faq</code> — answers from your FAQ knowledge base</li>
-    <li><code>/ask</code> — private staff thread (or staff channel) for real questions</li>
-  </ul>
+    <h2>Hosted setup (recommended)</h2>
+    <ol>
+      <li><strong>Subscribe</strong> — <a href="https://buy.stripe.com/4gMfZj4Or4Nw73I1R053O01">$19/mo checkout</a> via Stripe. Cancel anytime.</li>
+      <li><strong>Check your email</strong> — after payment we email your Discord invite link and a short provision note. You do not create a Discord app yourself.</li>
+      <li><strong>Add ServerDesk</strong> — open the emailed invite and add the bot to your server (as an admin).</li>
+      <li><strong>Configure</strong> — in your server, run:
+        <pre class="setup-cmd"><code>/setup welcome_channel:#welcome staff_channel:#staff-help staff_role:@Staff</code></pre>
+      </li>
+      <li>Try <code>/faq</code> and <code>/ask How do I access Week 1?</code>.</li>
+    </ol>
 
-  <h2>Permissions the invite will request</h2>
-  <p>When you approve the emailed invite, Discord may ask for: View Channels, Send Messages, Embed Links, Create Public/Private Threads, Send Messages in Threads. Manage Threads is optional. Mention Everyone is not required.</p>
+    <h2>What each command does</h2>
+    <ul>
+      <li><code>/setup</code> — welcome channel, staff channel, staff role, optional welcome text</li>
+      <li><code>/faq</code> — answers from your FAQ knowledge base</li>
+      <li><code>/ask</code> — private staff thread (or staff channel) for real questions</li>
+    </ul>
 
-  <h2>Self-host</h2>
-  <p>Prefer to run the open MVP yourself? Create your own Discord application in the <a href="https://discord.com/developers/applications">Developer Portal</a>, add a bot, enable <strong>Server Members Intent</strong> (welcome-on-join), and invite with scopes <code>bot</code> + <code>applications.commands</code>. Message Content Intent is not required (slash commands only). Then configure channels with <code>/setup</code> as above. Hosted buyers can ignore this section.</p>
+    <h2>Permissions the invite will request</h2>
+    <p>When you approve the emailed invite, Discord may ask for: View Channels, Send Messages, Embed Links, Create Public/Private Threads, Send Messages in Threads. Manage Threads is optional. Mention Everyone is not required.</p>
 
-  <p>Privacy: <a href="/privacy">/privacy</a> · Terms: <a href="/terms">/terms</a></p>
-  <p><a href="/">← Back to ServerDesk</a></p>
-</main>
+    <p class="page-links">Privacy: <a href="/privacy">/privacy</a> · Terms: <a href="/terms">/terms</a></p>
+    <p><a class="text-link" href="/">← Back to ServerDesk</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">S</span><span>ServerDesk</span></div>
+        <p class="footer-made">Made by Godin Solutions LLC</p>
+      </div>
+      <div class="footer-meta">
+        <p class="footer-links"><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/setup">Setup</a></p>
+        <p class="footer-support">Support: <a href="https://discord.gg/J2VJwsP5QP">Discord</a> · <a href="mailto:serverdesk.godinrules@gmail.com">serverdesk.godinrules@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -16,6 +16,22 @@ def css():
 def images(filename):
     return send_from_directory(os.path.join(ROOT, "images"), filename)
 
+@app.get("/favicon.ico")
+def favicon_ico():
+    return send_from_directory(ROOT, "favicon.ico")
+
+@app.get("/favicon.svg")
+def favicon_svg():
+    return send_from_directory(ROOT, "favicon.svg")
+
+@app.get("/favicon-32.png")
+def favicon_32():
+    return send_from_directory(ROOT, "favicon-32.png")
+
+@app.get("/apple-touch-icon.png")
+def apple_touch():
+    return send_from_directory(ROOT, "apple-touch-icon.png")
+
 @app.get("/privacy")
 def privacy():
     return send_from_directory(ROOT, "privacy.html")
