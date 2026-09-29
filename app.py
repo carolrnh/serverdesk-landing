@@ -32,6 +32,14 @@ def favicon_32():
 def apple_touch():
     return send_from_directory(ROOT, "apple-touch-icon.png")
 
+@app.get("/robots.txt")
+def robots():
+    return send_from_directory(ROOT, "robots.txt")
+
+@app.get("/sitemap.xml")
+def sitemap():
+    return send_from_directory(ROOT, "sitemap.xml")
+
 @app.get("/privacy")
 def privacy():
     return send_from_directory(ROOT, "privacy.html")
@@ -47,7 +55,6 @@ def terms():
 @app.get("/terms.html")
 def terms_html():
     return send_from_directory(ROOT, "terms.html")
-
 
 @app.get("/setup")
 def setup():

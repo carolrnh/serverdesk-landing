@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://serverdesk-landing.onrender.com/sitemap.xml
