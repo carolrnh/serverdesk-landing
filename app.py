@@ -12,6 +12,10 @@ def index():
 def css():
     return send_from_directory(ROOT, "styles.css")
 
+@app.get("/images/<path:filename>")
+def images(filename):
+    return send_from_directory(os.path.join(ROOT, "images"), filename)
+
 @app.get("/privacy")
 def privacy():
     return send_from_directory(ROOT, "privacy.html")
