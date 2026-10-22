@@ -16,6 +16,10 @@ def css():
 def images(filename):
     return send_from_directory(os.path.join(ROOT, "images"), filename)
 
+@app.get("/img/<path:filename>")
+def img(filename):
+    return send_from_directory(os.path.join(ROOT, "img"), filename)
+
 @app.get("/favicon.ico")
 def favicon_ico():
     return send_from_directory(ROOT, "favicon.ico")
